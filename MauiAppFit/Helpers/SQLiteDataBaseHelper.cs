@@ -12,6 +12,10 @@ namespace MauiAppFit.Helpers
     {
         readonly SQLiteAsyncConnection _db;
 
-        public SQLite
+        public SQLiteDataBaseHelper(string dbPath)
+        {
+            _db = new SQLiteAsyncConnection(dbPath);
+            _db.CreateTableAsync()
+        }
     }
 }
