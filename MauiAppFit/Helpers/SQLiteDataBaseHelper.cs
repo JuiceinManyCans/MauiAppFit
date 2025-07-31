@@ -42,6 +42,14 @@ namespace MauiAppFit.Helpers
                 model.Descricao,
                 model.Data,
                 model.Peso,
+                model.Observacoes,
+                model.Id
+            );
+        }
+
+        public Task<int> Delete(int id)
+        {
+            return _db.Table<Atividade>().DeleteAsync(i => i.Id == id);
         }
     }
 }

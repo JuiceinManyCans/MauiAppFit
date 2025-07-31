@@ -1,10 +1,22 @@
-﻿namespace MauiAppFit
+﻿using MauiAppFit.Helpers;
+
+namespace MauiAppFit
 {
     public partial class App : Application
     {
-        public App()
+        static SQLiteDataBaseHelper database;
+
+        public static SQLiteDataBaseHelper database;
         {
-            InitializeComponent();
+            get
+            {
+                if (database == null)
+                {
+                    database = new SQLiteDataBaseHelper()
+
+
+                }
+            }
         }
 
         protected override Window CreateWindow(IActivationState? activationState)
