@@ -66,14 +66,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Views\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <MauiXaml Update="Views\CadastroAtividade.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\ListaAtividade.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ListaAtividades.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Sobre.xaml">
@@ -82,10 +81,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="Views\CadastroAtividade.xaml">
+	  <None Update="Views\ListaAtividades.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </None>
-	  <None Update="Views\ListaAtividade.xaml">
+	  <None Update="Views\CadastroAtividade.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </None>
 	  <None Update="Views\Sobre.xaml">
